@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* universal selector */
+        *{
+            /* by default there is some padding and margin to remove it. */
+            margin: 0;
+            padding: 0;
+        }
         h1{
             background-color: aquamarine;
             /* border-style: solid;
@@ -36,16 +42,21 @@
             background-color: blanchedalmond;
             border: solid black 3px;
             width: 600px;
+            padding: 20px;
+            margin: 30px;
         }
         #secPara{
             background-color: blueviolet;
             border: solid black 3px;
             width: 600px;
+            padding: 10px 20px 30px 40px; /*top, right, bottom, left*/
+            margin: 50px;
         }
         #thirdPara{
             background-color: burlywood;
             border: solid black 3px;
             width: 600px;
+            padding: 20px 40px; /*yaxis(top, bottom), x-axis(right , left)*/
         }
     </style>
  </head>
@@ -62,6 +73,9 @@
     <p class="para" id="thirdPara">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum necessitatibus exercitationem, delectus dolorem magni qui quasi fugit reiciendis ea ad commodi perferendis quidem aliquid dolore nostrum quod numquam repellat velit incidunt ducimus quis itaque! Aliquid magni illo alias debitis ut reiciendis, amet corrupti quos, nulla maiores obcaecati aliquam, deleniti ratione praesentium sit hic unde quidem? Laboriosam reiciendis inventore repudiandae alias.
     </p>
+
+    <!-- HomeWork : Box Sizing Property-->
+     <!-- Why the value should be "border box" -->
 
 
 </body>
