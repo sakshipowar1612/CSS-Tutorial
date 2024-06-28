@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        /* We have created responsive design */
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #item1{
+            background-color: aqua;
+        }
+        #item2{
+            background-color: yellow;
+        }
+        #item3{
+            background-color: pink;
+        }
+        #item4{
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item1">
+
+        </div>
+        <div class="box" id="item2">
+
+        </div>
+        <div class="box" id="item3">
+
+        </div>
+        <div class="box" id="item4">
+
+        </div>
+    </div>
+</body>
+</html>
