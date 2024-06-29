@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Global varibles */
+        :root{
+            --primary-color: aqua;
+            --custom-width: 320px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /* --primary-color: aqua;
+            --custom-width: 320px; */
+            /* These are local varibles */
+            background-color: var(--primary-color);
+            width: var(--custom-width);
+            height: 420px;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 15px brown; */
+            /* box-shadow: 10px 15px 15px brown; */
+            /* box-shadow: 20px 15px 15px 10px brown; */
+            /* box-shadow: inset 10px 15px brown; */
+            box-shadow: 10px 15px 10px red, 20px 25px 10px green;
+        }
+        /* 
+        TEXT SHADOW
+         */
+        h2{
+            /* text-shadow: 2px 3px 2px red; */
+            /* text-shadow: yellow 5px 5px 3px; */
+            /* text-shadow: green 5px 5px; */
+            /* text-shadow: 10px 10px 2px; */
+            text-shadow: yellow 3px 2px 3px, red 6px 5px 3px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            
+            <h2>Welcome to CodeHelp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias nesciunt minima perferendis necessitatibus quis cumque, cupiditate odit aliquid consequatur! Voluptate quam, omnis, quibusdam magni recusandae sint aut neque porro sunt, consequatur officiis dolorum non corporis rerum. Rerum sunt nesciunt ratione? Quibusdam deserunt quasi culpa repellat blanditiis rerum commodi soluta, iste in vitae exercitationem obcaecati delectus dolor porro, hic dolore odio nulla enim debitis libero aliquid nemo perferendis! Ut deserunt adipisci dolorem enim deleniti unde beatae voluptatem repellendus fuga quia! Repellendus tempore, minus sapiente magnam voluptatem impedit placeat, quae laudantium facere molestias assumenda temporibus beatae numquam eos maxime laboriosam eaque!</p>
+        </div>
+    </div>
+</body>
+</html>
