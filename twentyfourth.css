@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100%;
+    font-weight: 100%;
+    background-color: #c9b6b6;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    padding: 2rem;
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid white;
+
+    /* <----------Properties along horizontal axis----------> */
+    /* place at the end of cell */
+    /* justify-self: end; */
+    /* stretch if no bounded height and column */
+    /* justify-self: stretch; */
+
+
+    /* <--------------Properties along vertical axis----------> */
+    align-self: end;
+    align-self: stretch;
+
+    /* <------------Properties along both the axis -------------> */
+    /* place the items at center of grid */
+    place-self: center;
+}
