@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(180, 177, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    min-width: 60%;
+    margin: 1rem auto;
+    min-height: 80%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px black;
+}
+.form_container{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    
+}
+
+.form_container::before{
+    content: "";
+    grid-row: 6/7; /* Adjust the rows you want the gap between */
+    height: 5px; /* Adjust the gap size */
+    background: transparent;
+}
+
+.form_container .items{
+    
+    height: 5rem;
+    /* border: 1px solid black; */
+}
+
+
+input{
+    margin: 10px 0px;
+    width: 100%;
+    height: 2rem;
+}
+
+select{
+    margin: 10px 0px;
+    width: 100%;
+    height: 2rem;
+}
+
+
+label{
+    font-weight: bold;
+    
+}
+
+
+textarea{
+    margin: 10px 0px;
+    width: 100%;
+    height: 7rem;
+}
+footer{
+    text-align: right;
+}
+
+footer button{
+    margin: 0px 10px;
+    color: white;
+    background-color: orangered;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+footer button:hover{
+    background-color: black;
+}
+
+@media (min-width:768px){
+    .container{
+        width: 60%;
+        margin: 1rem auto;
+        height: 80%;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        gap: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+    .form_container{
+        margin: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 15px;
+        
+    }
+    
+    .form_container::before{
+        content: "";
+        grid-row: 4/ 5; /* Adjust the rows you want the gap between */
+        height: 28px; /* Adjust the gap size */
+        background: transparent;
+    }
+    
+    .form_container .items{
+        
+        height: 5rem;
+        /* border: 1px solid black; */
+    }
+    
+    form .fname{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    form .lname{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    
+    form .email{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    form .jobrole{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    
+    form .address{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        height: 10rem;
+    }
+    
+    form .city{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+    }
+    
+    form .pincode{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    
+    form .startdate{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    form .uploadyourcv{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    
+    input{
+        margin: 10px 0px;
+        width: 100%;
+        height: 2rem;
+    }
+    
+    select{
+        margin: 10px 0px;
+        width: 100%;
+        height: 2rem;
+    }
+    
+    
+    label{
+        font-weight: bold;
+        
+    }
+    
+    
+    textarea{
+        margin: 10px 0px;
+        width: 100%;
+        height: 4rem;
+    }
+    footer{
+        text-align: right;
+    }
+    
+    footer button{
+        margin: 0px 10px;
+        color: white;
+        background-color: orangered;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 7px;
+        margin-bottom: 5px;
+    }
+}
