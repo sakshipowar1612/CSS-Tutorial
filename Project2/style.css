@@ -84,6 +84,7 @@ footer button{
     border-radius: 7px;
     margin-bottom: 5px;
     box-shadow: 1px 1px 5px black;
+    transition: all ;
 }
 
 footer button:hover{
