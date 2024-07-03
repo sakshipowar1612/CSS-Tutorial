@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.body_container{
+    max-width: 80vw;
+    padding: 1rem 0.5rem;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
