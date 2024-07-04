@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Lato",sans-serif ;
+    font-weight: 100;
+    line-height: 1.8em;
+    color: white;
+    
+}
+
+.img1{
+    background-image: url(developer.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content1{
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+    
+}
+
+.content1 .hi{
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+
+.content1 .name{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.content1 .fsd{
+    padding: 1.5rem 0rem;
+    font-size: 3.6rem;
+    font-weight: 300;
+    word-spacing: 1rem;
+}
+
+.work{
+    color: white;
+    background-color: black;
+    text-align: center;
+    
+}
+
+.work .content2{
+    margin: auto;
+    gap: 0.5rem;
+    padding: 8rem 10rem;
+    font-size: 4rem;
+    font-weight: 200;
+    word-spacing: 1rem;
+}
+
+.work .content2 .large{
+    font-size: 8rem;
+}
+
+.grid{
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 4rem 10rem;
+    gap: 1rem;
+}
+
+.grid .cards{
+    height: 28rem;
+    width: 20rem;
+    justify-self: center;
+    align-self: center;
+    border-radius: 1rem;
+    color: black;
+    line-height: 1rem;
+    box-shadow: 1px 1px 4px black;
+}
+
+.grid .cards .image{
+    height: 45%;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-color: gray;
+}
+
+.grid .cards .image img{
+    height: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 100%;
+}
+.grid .cards .para{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    justify-content: center;
+}
+
+.me{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    word-spacing: normal;
+    line-height: normal;
+    
+}
+
+.me .contactme{
+    background-color: rgb(47, 105, 47);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.me  .cmc{
+    padding: 0rem 2rem;
+}
+
+.me  .amc h1{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.me  .cmc h1{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+
+.me .aboutme{
+    background-color: rgb(180, 47, 47);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.me .amc{
+    padding: 0rem 2rem;
+}
+
+.footer{
+    background-color: black;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
